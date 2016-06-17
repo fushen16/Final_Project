@@ -32,5 +32,17 @@ additional functionality (if time allowed):
 
 8. Each inventory location only operates during local office hours (for example: 8am-5pm)
 9. A request may have a service contract attached to it so that certain SLA has to be met
-10. The selection of inventory location then need to be decided by its schedule as well as its
-    geo location
+10. The selection of inventory location then need to be decided by its schedule as well as its geo location
+
+*instruction on running this application*
+1. load data to mongodb database use the following command:
+    mongo inventoryLocAPI < inventoryLocationJSON.js
+
+    note that, before running the above command, make sure mongodb is running (run mongod at command line)
+
+2. go to project root folder and run nodemon index.js
+3. type localhost:3000 in a browser address bar
+4. use Add Inventory Location button to add an inventory location record after filling in the form above it
+5. the newly added inventory location record should show in the list below the form
+6. the added record should be persist, meaning refresh the page won't make it go away (record is stored in a mongodb database).
+7. use Remove button to remove a record. Again, the removal should be permanent. The record should also be deleted from db.
