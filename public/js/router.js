@@ -1,9 +1,13 @@
-App.Router = Backbone.Router.extend({
-  routes: {
-    '': 'index'
-  },
+'use strict';
 
-  index: function() {
-    console.log('index page');
-  }
-});
+App.Router = (function(){
+  return Backbone.Router.extend({
+    routes: {
+      '': 'index'
+    },
+
+    index: function() {
+      console.log('index page');
+    }
+  });
+})();

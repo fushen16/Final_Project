@@ -1,3 +1,5 @@
+'use strict';
+
 (function() {
   window.App = {
     Models: {},
@@ -11,5 +13,4 @@
   window.template = function(id) {
     return _.template( $('#' + id).html() );
   };
-
 })();
