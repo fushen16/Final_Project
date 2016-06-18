@@ -1,3 +1,5 @@
+'use strict';
+
 //Global App Views
 App.Views.App = (function(){
   return Backbone.View.extend({

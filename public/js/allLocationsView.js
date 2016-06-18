@@ -1,4 +1,4 @@
-'use strict';
+
 
 //all inventory location View
 App.Views.InventoryLocations = (function() {

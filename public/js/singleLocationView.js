@@ -1,3 +1,5 @@
+'use strict';
+
 //single inventory location View
 App.Views.InventoryLocation = (function(){
   return Backbone.View.extend({

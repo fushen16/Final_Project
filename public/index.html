@@ -104,11 +104,6 @@
     <script>
       new App.Router;
       Backbone.history.start();
-
-      App.inventoryLocations = new App.Collections.InventoryLocations;
-      App.inventoryLocations.fetch().then(function() {
-        new App.Views.App({ collection: App.inventoryLocations });
-      });
     </script>
   </body>
 </html>
