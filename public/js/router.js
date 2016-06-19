@@ -18,7 +18,7 @@ App.Router = (function(){
       })
     },
 
-    showInventoryLocationByStatus: function() {
+    showInventoryLocationByStatus: function(status) {
       console.log("to be implementd");
 
     }
